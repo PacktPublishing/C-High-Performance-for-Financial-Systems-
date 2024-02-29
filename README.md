@@ -16,8 +16,8 @@ In the fast-paced world of finance, every millisecond counts. The book delves in
 
 ## What you will learn
 - Design architecture of scalable financial trading systems
-*Understand strategies for low-latency trading and high-frequency trading
-*Learn the implementation of machine learning algorithms for financial data analysis
-*Understand risk management techniques for financial trading systems
-*Advanced topics in finance and trading, including algorithmic trading and portfolio optimization
-*Understand best practices for developing financial trading systems with C++
+- Understand strategies for low-latency trading and high-frequency trading
+- Learn the implementation of machine learning algorithms for financial data analysis
+- Understand risk management techniques for financial trading systems
+- Advanced topics in finance and trading, including algorithmic trading and portfolio optimization
+- Understand best practices for developing financial trading systems with C++
