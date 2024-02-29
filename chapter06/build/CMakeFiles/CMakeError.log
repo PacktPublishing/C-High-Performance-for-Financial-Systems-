@@ -1,0 +1,48 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/silahian/projects/book_cpp_high_performance_financial_systems/chapter_6/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/ninja cmTC_81edb && [1/2] Building C object CMakeFiles/cmTC_81edb.dir/src.c.o
+[2/2] Linking C executable cmTC_81edb
+FAILED: cmTC_81edb 
+: && /bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_81edb.dir/src.c.o  -o cmTC_81edb   && :
+/bin/ld: CMakeFiles/cmTC_81edb.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/silahian/projects/book_cpp_high_performance_financial_systems/chapter_6/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/bin/ninja cmTC_e76d2 && [1/2] Building C object CMakeFiles/cmTC_e76d2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e76d2
+FAILED: cmTC_e76d2 
+: && /bin/gcc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_e76d2.dir/CheckFunctionExists.c.o  -o cmTC_e76d2  -lpthreads && :
+/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+

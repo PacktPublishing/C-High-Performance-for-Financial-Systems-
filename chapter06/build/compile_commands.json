@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/silahian/projects/book_cpp_high_performance_financial_systems/chapter_6/build",
+  "command": "/bin/g++  -DBENCHMARK_STATIC_DEFINE  -g   -std=gnu++17 -o CMakeFiles/Benchmark_cache.dir/main.cpp.o -c /home/silahian/projects/book_cpp_high_performance_financial_systems/chapter_6/main.cpp",
+  "file": "/home/silahian/projects/book_cpp_high_performance_financial_systems/chapter_6/main.cpp"
+}
+]
