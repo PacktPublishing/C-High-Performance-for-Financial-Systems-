@@ -15,7 +15,7 @@ A cornerstone of this book is its comprehensive coverage of system design and ar
 In the fast-paced world of finance, every millisecond counts. The book delves into low-latency strategies that will enable your trading systems to react with lightning speed. Learn the art of reducing latency, optimizing code, and leveraging the latest hardware and software techniques to gain a competitive edge in the market.
 
 ## What you will learn
-*Design architecture of scalable financial trading systems
+- Design architecture of scalable financial trading systems
 *Understand strategies for low-latency trading and high-frequency trading
 *Learn the implementation of machine learning algorithms for financial data analysis
 *Understand risk management techniques for financial trading systems
